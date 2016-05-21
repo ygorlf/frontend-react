@@ -9,7 +9,6 @@ const mapStateToProps = (state) => {
 class Header extends Component {
 	render() {
 		return(
-			<div>
 				<header className="header">
 					<nav className="navigation">
 						<a href="#" className="logo">
@@ -24,8 +23,6 @@ class Header extends Component {
 						</ul>
 					</nav>
 				</header>
-				{this.props.children}
-			</div>
 		);
 	}
 }
