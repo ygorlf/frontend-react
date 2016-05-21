@@ -52,6 +52,7 @@
   "dependencies": {
     "file-loader": "^0.8.5",
     "react": "^15.*",
+    "react-css-modules": "^3.7.6",
     "react-dom": "^15.*",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
