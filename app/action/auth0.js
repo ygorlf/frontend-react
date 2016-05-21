@@ -98,7 +98,3 @@ export function logoutUser() {
     dispatch(receiveLogout())
   }
 }
-
-export const QUOTE_REQUEST = 'QUOTE_REQUEST'
-export const QUOTE_SUCCESS = 'QUOTE_SUCCESS'
-export const QUOTE_FAILURE = 'QUOTE_FAILURE'

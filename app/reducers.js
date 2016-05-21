@@ -37,15 +37,14 @@ const auth = (state = {isFetching: false, isAuthenticated: localStorage.getItem(
 }
 
 // The quotes reducer
-const menuDropdown = (state = {isActive: false}, action) => {
-  if (action.type === 'CHANGE_STATE') {
-    return state = {
-      isActive: !isActive
-    }
-  } else {
-    return state = {
-      isActive: false
-    }
+const menuDropdown = (state = {isActive: false, isAuthenticated: false}, action) => {
+  switch (action.type) {
+    case 'CHANGE_STATE':
+      return Object.assign({}, state, {
+        isActive: !state.isActive
+      })
+    default:
+      return state
   }
 }
 

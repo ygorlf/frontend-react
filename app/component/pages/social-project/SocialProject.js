@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProjectPage = props => (
+const SocialProject = props => (
   <div>
     <p>{props.params.project_id}</p>
   </div>
 );
 
-export default ProjectPage;
+export default SocialProject;
