@@ -2,6 +2,7 @@ import { combineReducers } from 'redux'
 import {
   LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT_SUCCESS
 } from './action/auth0'
+import { CHANGE_STATE } from './action/menu'
 
 // The auth reducer. The starting state sets authentication
 // based on a token being in local storage. In a real app,
@@ -37,15 +38,14 @@ const auth = (state = {isFetching: false, isAuthenticated: localStorage.getItem(
 }
 
 // The quotes reducer
-const menuDropdown = (state = {isActive: false}, action) => {
-  if (action.type === 'CHANGE_STATE') {
-    return state = {
-      isActive: !isActive
-    }
-  } else {
-    return state = {
-      isActive: false
-    }
+const menuDropdown = (state = {isActive: false, isAuthenticated: false}, action) => {
+  switch (action.type) {
+    case 'CHANGE_STATE':
+      return Object.assign({}, state, {
+        isActive: !state.isActive
+      })
+    default:
+      return state
   }
 }
 
