@@ -16,10 +16,10 @@ class Header extends Component {
 						</a>
 						<a href="#" className="dropdown" id="dropdown" onClick={() => this.props.dispatch({ type: 'CHANGE_STATE'})}></a>
 						<ul className={this.props.menuDropdown.isActive ? "menu menu-is-active" : "menu"} id="menu">
-							<li><Link to="/">início</Link></li>
-							<li><Link to="/showcase">vitrine</Link></li>
-							<li><Link to="/about">sobre</Link></li>
-							<li><Link to="/login">logar</Link></li>
+							<li><Link to="/">INÍCIO</Link></li>
+							<li><Link to="/showcase">VITRINE</Link></li>
+							<li><Link to="/about">SOBRE</Link></li>
+							<li><Link to="/login">ENTRAR</Link></li>
 						</ul>
 					</nav>
 				</header>
