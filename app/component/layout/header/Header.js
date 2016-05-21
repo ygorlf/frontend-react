@@ -12,7 +12,7 @@ class Header extends Component {
 				<header className="header">
 					<nav className="navigation">
 						<a href="#" className="logo">
-							<h1>Precisa<span>Ser</span></h1>
+							<h1>Precisa Ser</h1>
 						</a>
 						<a href="#" className="dropdown" id="dropdown" onClick={() => this.props.dispatch({ type: 'CHANGE_STATE'})}></a>
 						<ul className={this.props.menuDropdown.isActive ? "menu menu-is-active" : "menu"} id="menu">
