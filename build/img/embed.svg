@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="32px" viewBox="0 0 54 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>unfold-more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fluxo1" transform="translate(-633.000000, -449.000000)" fill="#F6A800">
+            <g id="unfold-more" transform="translate(660.220657, 464.918367) rotate(-270.000000) translate(-660.220657, -464.918367) translate(644.410798, 437.857143)">
+                <path d="M26.5063581,21.4043584 L31.1860765,16.6240517 L15.8098592,0.917329644 L0.433641851,16.6240517 L5.11336016,21.4043584 L15.8098592,10.477943 L26.5063581,21.4043584 Z M15.8098592,44.5618356 L5.11336016,33.6354203 L0.433641851,38.415727 L15.8098592,54.122449 L31.1860765,38.415727 L26.5063581,33.6354203 L15.8098592,44.5618356 L15.8098592,44.5618356 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
