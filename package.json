@@ -4,7 +4,7 @@
   "description": "Precisa Ser Prototyping",
   "scripts": {
     "production": "webpack",
-    "start": "webpack-dev-server --host 0.0.0.0"
+    "start": "webpack-dev-server --host 0.0.0.0 --progress"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   "contributors": [
     "Igor Couto <igorcouto@1sti.com.br>",
     "Ygor Fonseca <ygorfonseca@1sti.com.br>",
-    "Arthur Couto <arthurcouto@1sti.com.br>"
+    "Arthur Couto <arthurcouto@1sti.com.br>",
+    "Pedro Gualandi <pedrogualandi@1sti.com.br>"
   ],
   "license": "",
   "devDependencies": {

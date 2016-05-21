@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { Router, Route, Link, browserHistory } from 'react-router';
 import Store from './reducers'
-import '../style/main.styl';
+import '../smacss/main.styl';
 
 import Home from './component/pages/home/Home';
 import Showcase from './component/pages/showcase/Showcase';
