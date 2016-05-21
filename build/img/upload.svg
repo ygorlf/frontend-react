@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="37px" viewBox="0 0 55 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>backup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fluxo1" transform="translate(-330.000000, -447.000000)" fill="#F6A800">
+            <g id="backup" transform="translate(330.321596, 447.408163)">
+                <path d="M43.4507629,13.5306122 C41.8829519,5.86326531 35.1637617,0 26.8767606,0 C20.3815434,0 14.7822183,3.60816327 12.0945423,9.02040816 C5.15137911,9.92244898 0,15.5602041 0,22.5510204 C0,29.9928571 6.04727113,36.0816327 13.4383803,36.0816327 L42.5548709,36.0816327 C48.826115,36.0816327 53.7535211,31.1204082 53.7535211,24.8061224 C53.7535211,18.9428571 49.050088,13.9816327 43.4507629,13.5306122 L43.4507629,13.5306122 Z M31.3562207,20.2959184 L31.3562207,29.3163265 L22.3973005,29.3163265 L22.3973005,20.2959184 L15.6781103,20.2959184 L26.8767606,9.02040816 L38.0754108,20.2959184 L31.3562207,20.2959184 L31.3562207,20.2959184 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

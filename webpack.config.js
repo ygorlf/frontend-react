@@ -10,7 +10,7 @@ const nib = require('nib');
 const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build'),
-  style: path.join(__dirname, 'style')
+  smacss: path.join(__dirname, 'smacss')
 };
 
 const common = {
@@ -24,16 +24,21 @@ const common = {
     filename: 'bundle.js'
   },
   plugins: [
-    new ExtractTextPlugin("main.css")
+    new ExtractTextPlugin("bundle.css")
   ],
   module: {
     loaders: [
       {
         test: /\.styl$/,
+        loader: 'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!stylus-loader',
+        include: PATHS.app,
+      },
+      {
+        test: /\.styl$/,
         loader: ExtractTextPlugin.extract('css-loader!stylus-loader'),
-        include: PATHS.style,
-        exclude: /(node_modules|bower_components)/
-      },{
+        include: PATHS.smacss
+      },
+      {
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel', // 'babel-loader' is also a legal name to reference

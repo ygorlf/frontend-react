@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fluxo1" transform="translate(-123.000000, -177.000000)">
+            <g id="add" transform="translate(113.000000, 167.000000)">
+                <rect id="bounds" x="0" y="0" width="51" height="51"></rect>
+                <path d="M23.375,10.625 L23.375,23.375 L10.625,23.375 L10.625,27.625 L23.375,27.625 L23.375,40.375 L27.625,40.375 L27.625,27.625 L40.375,27.625 L40.375,23.375 L27.625,23.375 L27.625,10.625 L23.375,10.625 Z" id="Shape" fill="#000000" opacity="0.539999962"></path>
+            </g>
+        </g>
+    </g>
+</svg>
