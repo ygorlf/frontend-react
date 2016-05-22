@@ -30,13 +30,8 @@ const common = {
     loaders: [
       {
         test: /\.styl$/,
-        loader: 'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!stylus-loader',
-        include: PATHS.app,
-      },
-      {
-        test: /\.styl$/,
         loader: ExtractTextPlugin.extract('css-loader!stylus-loader'),
-        include: PATHS.smacss
+        include: [PATHS.smacss,PATHS.app]
       },
       {
         test: /\.js?$/,
