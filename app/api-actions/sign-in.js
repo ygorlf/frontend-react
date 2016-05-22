@@ -4,6 +4,7 @@ const API_ROOT = 'http://localhost:3000'; // Change this
 
 export function login(email,password) {
   return {
+    type: 'SUBMIT_LOGIN',
     [CALL_API]: {
       endpoint: API_ROOT + '/session/create',
       method: 'POST',
@@ -18,13 +19,13 @@ export function login(email,password) {
           }
         }),
       types: [
-        "REQUEST",
+        "REQUEST_LOGIN",
         //{
         //  type: types.FETCHCOLLECTION_REQUEST,
         //  payload: { collectionId: collectionId }
         //},
         {
-          type: "SUCCESS",
+          type: "SUCCESS_LOGIN",
           payload: (action, state, res) => {
             const contentType = res.headers.get('Content-Type');
             if (contentType && ~contentType.indexOf('json')) {
@@ -34,7 +35,7 @@ export function login(email,password) {
             }
           }
         },
-        "FAILURE"
+        "FAILURE_LOGIN"
       ]
     }
   };

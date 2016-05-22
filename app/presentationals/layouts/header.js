@@ -9,7 +9,7 @@ class Header extends Component {
   render() {
     var loginModal;
     if (this.props.TopMenu.loginModalIsVisible){
-      loginModal = <LoginForm/>
+      loginModal = <LoginForm login={this.props.onLoginSubmit}/>
     }
 
     return(

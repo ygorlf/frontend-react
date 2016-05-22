@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import * as ApiSignIn from '../../api-actions/sign-in'
-
 class LoginForm extends Component {
 
   render() {
@@ -16,7 +14,7 @@ class LoginForm extends Component {
   handleClick(event) {
     const email = this.refs.email.value;
     const password = this.refs.password.value;
-    ApiSignIn.login(email, password);
+    this.props.login(email, password);
   }
 }
 

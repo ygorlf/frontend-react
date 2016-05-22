@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from './home.styl'
+import CSSModules from 'react-css-modules';
 
 const Home = props => (
  <div>
@@ -6,4 +8,4 @@ const Home = props => (
  </div>
 );
 
-export default Home;
+export default CSSModules(Home, styles);
