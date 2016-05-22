@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Header from '../presentationals/layouts/header'
-import { showModal } from '../actions/layouts/principal'
+import { showModal, confirmLogin } from '../actions/layouts/principal'
 import { login } from '../api-actions/sign-in'
 
 const mapStateToProps = (state) => {
@@ -15,8 +15,14 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     showModal: (type) => {
-      dispatch(showModal(type))
+      dispatch(showModal(type));
     },
+    confirmLogin: (user) => {
+      dispatch(confirmLogin(user));
+    },
+    onLoginSubmit: (email, password) => {
+      dispatch(login(email, password));
+    }
   }
 }
 

@@ -8,11 +8,12 @@ class LoginForm extends Component {
           <button className="form-login__signin">Login</button>
           <input type="email" name="email" placeholder="nome@email.com" className="form-login__email" ref='email'/>
           <input type="password" name="password" placeholder="senha" className="form-login__password" ref='password'/>
-          <input type="submit" onClick={(event) => this.handleClick(event)} value="Entrar" className="form-login__btn" />
+          <button onClick={(event) => this.handleClick(event)} value="Entrar" className="form-login__btn" />
         </form>
     )
   }
   handleClick(event) {
+    event.preventDefault();
     const email = this.refs.email.value;
     const password = this.refs.password.value;
     this.props.login(email, password);

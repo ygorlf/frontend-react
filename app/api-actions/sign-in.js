@@ -26,6 +26,7 @@ export function login(email,password) {
               res.json().then((json) => {
                 let obj = json.data.attributes;
                 if (obj.status === "success"){
+                  
                   //dispatch autenticar, com jwt
                 }else{
                   //dispatch falha de login
