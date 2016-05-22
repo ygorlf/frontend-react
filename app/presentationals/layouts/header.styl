@@ -1,0 +1,91 @@
+/* Header Styles... */
+.header
+	width: 100%
+	height: 65px
+
+	border-bottom: 3px solid sixthColor
+
+.navigation
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+
+	@media(min-width: 766px)
+		justify-content: flex-end
+		padding: 0 10%
+
+.logo
+	width: 128px
+	text-indent: -9999px
+	background: url('../../../build/assets/img/precisaser.svg') no-repeat center
+
+	@media(min-width: 766px)
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+
+
+	&:hover
+	&:active
+		border: none
+
+	span
+		color: thirdColor
+		border-bottom: 4px solid thirdColor
+
+.dropdown
+	display: block
+	width: 49px
+	height: 31px
+	background: url('../../../build/assets/img/menu-mobile.svg') no-repeat
+
+	&:hover
+	&:active
+		border: none
+
+	@media(min-width: 768px)
+		display: none
+
+.menu
+	position: relative
+	display: none
+
+	@media(min-width: 768px)
+		display: flex
+		width: auto
+
+	>li
+		width: 100%
+		margin: .5em 0
+
+		@media(min-width: 768px)
+			margin: 0 5px
+
+			&:nth-child(1)
+			&:nth-child(2)
+			&:nth-child(3)
+				a:after
+					content: '.'
+					position: absolute
+					top: -100%
+					left: 100%
+					font-size: 2em
+
+	a
+		width: 100%
+		display: inline-block
+
+		cursor: pointer
+		text-align: center
+		color: fourthColor
+
+		@media(min-width: 766px)
+			position: relative
+
+.submenu
+	display: none
+
+.alerts
+.messages
+	display: none
