@@ -5,6 +5,11 @@ const TopMenu = (state = [], action) => {
         modalIsVisible: true,
         modalType: action.modalType
       })
+    case 'HIDE_MODAL':
+      return Object.assign({}, state, {
+        modalIsVisible: false,
+        modalType: [],
+      })
     default:
       return state;
   }

@@ -14,5 +14,6 @@ const reducers = combineReducers({
 const createStoreWithMiddleware = applyMiddleware(apiMiddleware,thunk)(createStore);
 
 export default function configureStore(initialState) {
- return createStoreWithMiddleware(reducers, initialState);
+ return createStoreWithMiddleware(reducers, initialState,
+   window.devToolsExtension ? window.devToolsExtension() : f => f);
 }

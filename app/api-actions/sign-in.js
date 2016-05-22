@@ -1,5 +1,6 @@
 import { CALL_API } from 'redux-api-middleware';
 const API_ROOT = 'http://localhost:3000'; // Change this
+import { confirmLogin, hideModal } from '../actions/layouts/principal'
 
 export function login(email,password) {
   return dispatch => {
@@ -26,7 +27,8 @@ export function login(email,password) {
               res.json().then((json) => {
                 let obj = json.data.attributes;
                 if (obj.status === "success"){
-                  
+                  dispatch(confirmLogin(obj));
+                  dispatch(hideModal());
                   //dispatch autenticar, com jwt
                 }else{
                   //dispatch falha de login

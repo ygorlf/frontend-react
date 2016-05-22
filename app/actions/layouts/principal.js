@@ -5,10 +5,15 @@ export const showModal = (params) => {
   }
 }
 
-export const confirm_login = (params) => {
-  console.log(params);
+export const confirmLogin = (params) => {
   return {
     type: 'LOGGED_IN',
     params
+  }
+}
+
+export const hideModal = () => {
+  return {
+    type: 'HIDE_MODAL'
   }
 }
