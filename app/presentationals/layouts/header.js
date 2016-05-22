@@ -8,9 +8,21 @@ class Header extends Component {
   render() {
     var showModal;
     if (this.props.TopMenu.modalIsVisible){
+      // aplicar css
+      var main = document.getElementsByTagName('main');
+      console.log(main);
+      main[0].style.webkitFilter = "blur(5px)";
       if (this.props.TopMenu.modalType === "login"){
         showModal = <LoginForm login={this.props.onLoginSubmit}/>
       }
+    }
+
+    var removeBlur;
+    if (!this.props.TopMenu.modalIsVisible){
+      // retirar css
+      var main = document.getElementsByTagName('main');
+      main[0].style.webkitFilter = "blur(0px)";
+      console.log('hey...');
     }
 
     return(

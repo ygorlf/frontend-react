@@ -1,7 +1,10 @@
+/* Imports */
+@import '../../../smacss/variables.styl'
+
 .header
 	width: 100%
 	height: 65px
-	border-bottom: 3px solid
+	border-bottom: 3px solid sixthColor
 
 .navigation
 	display: flex
@@ -18,18 +21,14 @@
 	text-indent: -9999px
 	background: url('../../../build/assets/img/precisaser.svg') no-repeat center
 
-	@media(min-width: 766px)
-		position: absolute
-		left: 50%
-		transform: translateX(-50%)
-
-
 	&:hover
 	&:active
 		border: none
 
-	span
-		border-bottom: 4px solid
+	@media(min-width: 766px)
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
 
 .dropdown
 	display: block
@@ -73,6 +72,7 @@
 		width: 100%
 		display: inline-block
 
+		color: fourthColor
 		cursor: pointer
 		text-align: center
 

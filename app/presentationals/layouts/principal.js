@@ -5,7 +5,9 @@ import Footer from './footer'
 const Principal = props => (
  <div>
      <TopMenu/>
-     {props.children}
+     <main>
+       {props.children}
+     </main>
      <Footer/>
  </div>
 );
