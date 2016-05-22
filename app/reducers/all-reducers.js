@@ -3,8 +3,10 @@ import { apiMiddleware } from 'redux-api-middleware';
 import thunk from 'redux-thunk';
 import SocialProjects from './social-projects';
 import TopMenu from './top-menu';
+import Global from './global';
 
 const reducers = combineReducers({
+  Global,
   SocialProjects,
   TopMenu
 })

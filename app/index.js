@@ -10,9 +10,11 @@ import Principal from './presentationals/layouts/principal'
 import Home from './presentationals/pages/home';
 
 const initialState = {
+  Global:{
+    isAuthenticated: false
+  },
   TopMenu:{
-    dropDownIsVisible: false,
-    loginIsVisible: false
+    modalIsVisible: false
   }
 }
 

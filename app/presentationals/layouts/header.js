@@ -7,9 +7,11 @@ import LoginForm from '../parts/login'
 class Header extends Component {
 
   render() {
-    var loginModal;
-    if (this.props.TopMenu.loginModalIsVisible){
-      loginModal = <LoginForm login={this.props.onLoginSubmit}/>
+    var showModal;
+    if (this.props.TopMenu.modalIsVisible){
+      if (this.props.TopMenu.modalType === "login"){
+        showModal = <LoginForm login={this.props.onLoginSubmit}/>
+      }
     }
 
     return(
@@ -20,13 +22,13 @@ class Header extends Component {
       		</a>
       		<a href="#" styleName="dropdown" id="dropdown"></a>
       		<ul styleName="menu" id="menu">
-      			<li><Link to="/" onClick={() => this.props.onMenuClick(this.props.TopMenu.dropDownIsVisible)}>INÍCIO</Link></li>
+      			<li><Link to="/">INÍCIO</Link></li>
       			<li><Link to="/">VITRINE</Link></li>
       			<li><Link to="/">SOBRE</Link></li>
-            <li><a onClick={() => this.props.onLoginClick()}>ENTRAR</a></li>
+            <li><a onClick={() => this.props.showModal('login')}>ENTRAR</a></li>
       		</ul>
       	</nav>
-        {loginModal}
+        {showModal}
       </header>
     );
   }

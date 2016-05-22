@@ -1,12 +1,6 @@
-export const toggleMenu = (dropDownIsVisible) => {
+export const showModal = (params) => {
   return {
-    type: 'TOGGLE_MENU',
-    dropDownIsVisible
-  }
-}
-
-export const showLoginModal = () => {
-  return {
-    type: 'SHOW_LOGIN_MODAL'
+    type: 'SHOW_MODAL',
+    modalType: params
   }
 }

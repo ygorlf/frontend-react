@@ -2,25 +2,21 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Header from '../presentationals/layouts/header'
-import { toggleMenu, showLoginModal } from '../actions/layouts/principal'
+import { showModal } from '../actions/layouts/principal'
 import { login } from '../api-actions/sign-in'
 
 const mapStateToProps = (state) => {
  return {
+    Global: state.Global,
     TopMenu: state.TopMenu
  }
 }
+
 const mapDispatchToProps = (dispatch) => {
   return {
-    onMenuClick: (dropDownIsVisible) => {
-      dispatch(toggleMenu(dropDownIsVisible))
+    showModal: (type) => {
+      dispatch(showModal(type))
     },
-    onLoginClick: () => {
-      dispatch(showLoginModal())
-    },
-    onLoginSubmit: (email, password) => {
-      dispatch(login(email, password))
-    }
   }
 }
 

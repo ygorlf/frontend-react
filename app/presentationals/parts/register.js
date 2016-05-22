@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class LoginForm extends Component {
+class RegisterForm extends Component {
 
   render() {
     return(
@@ -16,7 +16,7 @@ class LoginForm extends Component {
     const password = this.refs.password.value;
     this.props.login(email, password);
   }
-  
+
 }
 
-export default LoginForm;
+export default RegisterForm;

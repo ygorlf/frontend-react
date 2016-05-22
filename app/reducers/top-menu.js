@@ -1,12 +1,9 @@
 const TopMenu = (state = [], action) => {
   switch (action.type) {
-    case 'TOGGLE_MENU':
+    case 'SHOW_MODAL':
       return Object.assign({}, state, {
-        dropDownIsVisible: !state.dropDownIsVisible
-      })
-    case 'SHOW_LOGIN_MODAL':
-      return Object.assign({}, state, {
-        loginModalIsVisible: true
+        modalIsVisible: true,
+        modalType: action.modalType
       })
     default:
       return state;
